@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Nunito+Sans:wght@200;300;400;600&family=Pacifico&family=Reenie+Beanie&family=Sacramento&family=Satisfy&family=Yellowtail&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Nunito+Sans:wght@200;300;400;600&family=Pacifico&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Reenie+Beanie&family=Sacramento&family=Satisfy&family=Yellowtail&display=swap");
 /* General */
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #383838;
   background-color: #fff;
 }
@@ -13,9 +13,9 @@ a {
   color: #848484;
 }
 
-a:hover {
+/* a:hover {
   color: #000;
-}
+} */
 
 h1,
 h2,
@@ -24,17 +24,13 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-.site-section {
-  padding: 6rem 0;
-}
-
-/* Navbar */
+/* NAVBAR */
 
 .custom-navbar {
-  padding-top: 50px;
+  padding-top: 40px;
   width: 100%;
 }
 
@@ -47,8 +43,10 @@ h6,
 }
 
 .navbar-light .navbar-nav .nav-link {
-  font-size: 18px;
-  letter-spacing: 2px;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
   font-weight: 600;
   color: #848484;
 }
@@ -57,8 +55,73 @@ h6,
   color: #6180fe;
 }
 
-.navbar-light .navbar-nav .active a:active {
-  text-decoration: underline !important;
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  border-bottom: 3px solid #6180fe;
+}
+
+/* INTRODUCTION */
+
+.site-section {
+  padding: 6rem 0;
+}
+.site-section .intro {
+  text-align: center;
+}
+.site-section .intro h2 {
+  font-weight: 600;
+}
+.site-section .intro p {
+  font-size: 21px;
+  font-weight: 400;
+  color: #848484;
+  letter-spacing: 0.5px;
+}
+/* GRIDS */
+
+.portfolio-grid {
+  margin-top: 6rem;
+}
+.projects .work-info {
+  letter-spacing: 0.15px;
+  color: #383838;
+}
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-type {
+  margin-bottom: 2rem;
+  color: #6c757d !important;
+}
+
+.project-tech {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.project-tech span {
+  font-weight: 500;
+  color: #6180fe;
+}
+.project-desc {
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 2;
+  /* letter-spacing: 0.2px; */
+  font-weight: 500;
+}
+.project-desc ul {
+  padding: 0 1.25rem 1rem;
+}
+.project-links {
+  margin-left: 1rem;
+}
+.projects .download {
+  margin-right: 1rem;
 }
 
 /* .filters a {
@@ -99,10 +162,6 @@ h6,
   background-color: #000;
 } */
 
-.site-section .intro {
-  text-align: center;
-}
-
 .item {
   border: none;
   margin-bottom: 30px;
@@ -117,7 +176,8 @@ h6,
   display: block;
   position: relative;
   overflow: hidden;
-  height: 500px;
+  /* height: 500px; */
+  /* padding: 2rem; */
   border-radius: 0.7rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -146,12 +206,16 @@ h6,
 }
 
 .item .item-wrap img {
+  height: 350px;
   transition: 0.3s transform ease;
   -webkit-transform: scale(1);
   transform: scale(1);
   padding-inline: 0;
+  border-radius: 0.7rem;
 }
-
+.work-info {
+  padding: 0 1.5rem;
+}
 .item .item-wrap > .work-info {
   position: absolute;
   top: 50%;
@@ -237,6 +301,7 @@ h6,
   border-radius: 0.17rem;
   padding: 10px 15px;
   font-size: 12px;
+  background-color: #fff;
   text-transform: uppercase;
   color: #6180fe;
   transition: 0.2s all ease;
@@ -252,7 +317,7 @@ h6,
 .download:hover {
   color: #fff;
   text-decoration: none;
-  background: #6180fe;
+  background-color: #6180fe;
 }
 
 .testimonial-carousel .owl-dots {
