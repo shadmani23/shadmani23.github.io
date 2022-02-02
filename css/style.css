@@ -115,11 +115,21 @@ h6,
   font-weight: 500;
 }
 .project-desc ul {
-  padding: 0 1.25rem 1rem;
+  padding: 0 1rem;
 }
 .project-links {
   margin-left: 1rem;
 }
+
+.project-links a {
+  /* text-decoration: none; */
+  margin-right: 0.7rem;
+}
+
+.project-links a:hover {
+  color: #6180fe;
+}
+
 .projects .download {
   margin-right: 1rem;
 }
@@ -206,13 +216,20 @@ h6,
 }
 
 .item .item-wrap img {
-  height: 350px;
+  /* height: 350px; */
   transition: 0.3s transform ease;
   -webkit-transform: scale(1);
   transform: scale(1);
   padding-inline: 0;
   border-radius: 0.7rem;
 }
+
+.img-posi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .work-info {
   padding: 0 1.5rem;
 }
