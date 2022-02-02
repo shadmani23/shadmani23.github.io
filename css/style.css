@@ -85,6 +85,7 @@ h6,
   margin-top: 6rem;
 }
 .projects .work-info {
+  padding: 0.7rem 1.5rem 0;
   letter-spacing: 0.15px;
   color: #383838;
 }
@@ -116,18 +117,20 @@ h6,
 }
 .project-desc ul {
   padding: 0 1rem;
+  margin-bottom: 0.25rem;
 }
 .project-links {
   margin-left: 1rem;
 }
 
 .project-links a {
-  /* text-decoration: none; */
+  text-decoration: underline;
+  color: #6180fe;
   margin-right: 0.7rem;
 }
 
 .project-links a:hover {
-  color: #6180fe;
+  color: #e7717d;
 }
 
 .projects .download {
@@ -230,9 +233,6 @@ h6,
   justify-content: center;
 }
 
-.work-info {
-  padding: 0 1.5rem;
-}
 .item .item-wrap > .work-info {
   position: absolute;
   top: 50%;
@@ -337,7 +337,7 @@ h6,
   background-color: #6180fe;
 }
 
-.testimonial-carousel .owl-dots {
+/* .testimonial-carousel .owl-dots {
   position: absolute;
   bottom: 40px;
   width: 100%;
@@ -369,8 +369,7 @@ h6,
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  /* required */
-}
+} */
 
 .list-line li {
   margin-bottom: 10px;
@@ -485,18 +484,17 @@ h6,
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-
 /* Custom Navmenu */
 
 nav button {
   border: 0 !important;
   outline: 0 !important;
 }
+nav .navbar-collapse {
+  padding-inline: 0;
+}
 
-.custom-navmenu {
+/* .custom-navmenu {
   background: #0d1e2d;
 }
 
@@ -541,14 +539,11 @@ nav button {
 .custom-navmenu a:hover {
   color: #fff;
 }
-
-nav .navbar-collapse {
-  padding-inline: 0;
-}
+ */
 
 /* Burger */
 
-.burger {
+/* .burger {
   width: 28px;
   height: 32px;
   cursor: pointer;
@@ -601,8 +596,6 @@ nav .navbar-collapse {
   top: 26px;
 }
 
-/* Hover */
-
 .burger:hover:before {
   top: 7px;
 }
@@ -610,8 +603,6 @@ nav .navbar-collapse {
 .burger:hover:after {
   top: 23px;
 }
-
-/* Click */
 
 .burger.active span {
   opacity: 0;
@@ -626,19 +617,18 @@ nav .navbar-collapse {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
-  /*for IE*/
-}
-
+ } 
 .burger.active:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-5);
-  /*for IE*/
 }
 
 .burger:focus {
   outline: none;
-}
+} */
+
+/* FOOTER */
 
 .footer {
   padding: 0 0 4rem 0;
@@ -704,7 +694,16 @@ nav .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
   }
+  .projects .work-info {
+    padding-top: 1.5rem !important;
+  }
 }
+
+/* @media (max-width: 780px) {
+  .projects .work-info {
+    padding-top: 1.5rem !important;
+  }
+} */
 
 @media (min-width: 992px) {
   nav .nav-link {
