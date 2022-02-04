@@ -653,6 +653,12 @@ nav .navbar-collapse {
   text-align: center;
 }
 
+.about-section {
+  padding-left: 0;
+  padding-right: 2rem;
+  text-align: justify;
+}
+
 .social a {
   display: inline-block;
   width: 40px;
