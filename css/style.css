@@ -71,6 +71,7 @@ h6,
   padding: 6rem 0;
 }
 .site-section .intro {
+  margin-bottom: 5rem;
   text-align: center;
 }
 .site-section .intro h2 {
@@ -82,10 +83,52 @@ h6,
   color: #848484;
   letter-spacing: 0.5px;
 }
+
+.filter-row {
+  padding-left: 2rem;
+}
+.filters a {
+  color: #383838;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.filters a:hover,
+.filters a:focus,
+.filters a:active {
+  text-decoration: none;
+}
+
+.filters a:hover:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 1px;
+  background-color: #000;
+}
+
+.filters a.active {
+  color: #6180fe;
+}
+
+.filters a.active:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 1px;
+  background-color: #6180fe;
+}
+
 /* GRIDS */
 
 .portfolio-grid {
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 .projects .work-info {
   padding: 0.7rem 1.5rem 0;
@@ -214,34 +257,50 @@ h6,
 }
 
 .item .item-wrap > .work-info h3 {
-  font-size: 20px;
+  color: #fff;
+  font-size: 24px;
   margin-bottom: 0;
 }
 
 .item .item-wrap > .work-info span {
-  font-size: 14px;
+  color: #fff;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
 
 .item .item-wrap:hover {
+  /* background-color: #eef2f5; */
   text-decoration: none;
 }
 
 .item .item-wrap:hover img {
+  /* opacity: 0.5; */
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
 .item .item-wrap:hover:after {
-  opacity: 1;
+  opacity: 0.5;
   visibility: visible;
 }
 
 .item .item-wrap:hover .work-info {
+  color: #383838;
   margin-top: 0px;
   opacity: 1;
   visibility: visible;
+}
+
+.design .work-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.design .item-wrap:hover .work-info {
+  background: #6e6e6e69;
 }
 
 .h3 {
@@ -404,10 +463,103 @@ nav .navbar-collapse {
   padding-inline: 0;
 }
 
+/* Scroll to Top */
+.blok:nth-of-type(odd) {
+  background-color: white;
+}
+
+.blok:nth-of-type(even) {
+  background-color: black;
+}
+
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+/* Progress */
+
+/* .paginacontainer {
+  height: 3000px;
+} */
+
+.progress-wrap {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.progress-wrap::after {
+  position: absolute;
+  content: "";
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMSAyLjIwNmwtNi4yMzUgNy41MjgtLjc2NS0uNjQ1IDcuNTIxLTkgNy40NzkgOS0uNzY0LjY0Ni02LjIzNi03LjUzdjIxLjg4NGgtMXYtMjEuODgzeiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.progress-wrap:hover::after {
+  opacity: 0.8;
+}
+.progress-wrap svg path {
+  fill: none;
+}
+.progress-wrap svg.progress-circle path {
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-width: 4;
+  box-sizing: border-box;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
 /* FOOTER */
 
 .footer {
-  padding: 0 0 4rem 0;
+  padding: 4rem 0;
 }
 
 .footer a {
