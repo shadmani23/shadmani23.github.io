@@ -528,6 +528,7 @@ nav .navbar-collapse {
 .progress-wrap::after {
   position: absolute;
   content: "";
+  /* background-image: url("scroll-to-top.svg"); */
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMSAyLjIwNmwtNi4yMzUgNy41MjgtLjc2NS0uNjQ1IDcuNTIxLTkgNy40NzkgOS0uNzY0LjY0Ni02LjIzNi03LjUzdjIxLjg4NGgtMXYtMjEuODgzeiIvPjwvc3ZnPg==");
   background-repeat: no-repeat;
   background-position: center;
