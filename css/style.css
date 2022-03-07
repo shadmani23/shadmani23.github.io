@@ -528,11 +528,11 @@ nav .navbar-collapse {
 .progress-wrap::after {
   position: absolute;
   content: "";
-  /* background-image: url("scroll-to-top.svg"); */
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMSAyLjIwNmwtNi4yMzUgNy41MjgtLjc2NS0uNjQ1IDcuNTIxLTkgNy40NzkgOS0uNzY0LjY0Ni02LjIzNi03LjUzdjIxLjg4NGgtMXYtMjEuODgzeiIvPjwvc3ZnPg==");
+  background-image: url("../img/scroll-to-top.svg");
+  /* background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMSAyLjIwNmwtNi4yMzUgNy41MjgtLjc2NS0uNjQ1IDcuNTIxLTkgNy40NzkgOS0uNzY0LjY0Ni02LjIzNi03LjUzdjIxLjg4NGgtMXYtMjEuODgzeiIvPjwvc3ZnPg=="); */
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.5;
+  opacity: 0.6;
   left: 0;
   top: 0;
   height: 46px;
@@ -544,7 +544,7 @@ nav .navbar-collapse {
   transition: all 200ms linear;
 }
 .progress-wrap:hover::after {
-  opacity: 0.8;
+  opacity: 1;
 }
 .progress-wrap svg path {
   fill: none;
