@@ -62,7 +62,8 @@ h6,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  border-bottom: 3px solid #6180fe;
+  /* border-bottom: 3px solid #6180fe; */
+  color: #6180fe;
 }
 
 /* INTRODUCTION */
