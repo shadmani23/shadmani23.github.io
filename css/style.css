@@ -168,6 +168,7 @@ h6,
 }
 .project-links {
   margin-left: 1rem;
+  /* padding: 1rem 0; */
 }
 
 .project-links a {
@@ -300,9 +301,9 @@ h6,
   height: 100%;
 }
 
-.design .item-wrap:hover .work-info {
+/* .design .item-wrap:hover .work-info {
   background: #6e6e6e69;
-}
+} */
 
 .h3 {
   font-size: 20px;
